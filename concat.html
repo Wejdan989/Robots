@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+      <title>  Contact Us  </title>
+      
+      <link rel="stylesheet" href="./assets/style.css">
+     
+     <style>
+        
+.concats {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/9.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .concats::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  section-concats {
+    position: relative;
+    z-index: 3;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  .container-concats {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .section-concats-header {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .section-concats-header h2 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .section-concats-header p {
+    color: #FFF;
+  }
+  
+  .row  {
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .concats-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  
+  .concats-info {
+    margin-left: 20px;
+  }
+  
+  .concats-info h4 {
+    color: #1da9c0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .concats-info p {
+    color: #FFF;
+    font-size: 1em;
+  }
+  
+.contact-form {
+  background-color: #fff;
+  padding: 40px;
+  width: 45%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact-form h2 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact-form .input-box span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"]
+{
+  width: 100%;
+  background: #00bcd4;
+  color: #FFF;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #00bcd4;
+  transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover
+{
+  background: #FFF;
+  color: #00bcd4;
+}
+  @media (max-width: 991px) {
+    section-concats {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    
+    .row {
+      flex-direction: column;
+    }
+    
+    .contact-info {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    
+    .contact-form {
+      width: 100%;
+    }
+  }
+     </style>
+   </head>
+   <body>
+      
+    <nav class="navbar">
+        <div class="menu_left">
+            <div class="logo">
+                <h2>Robots</h2>
+            </div>
+            <div class="menu-li">
+                <ul class="menu">
+                    <li class="menu_list">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="./information.html">Robots</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="menu_list ">
+                        <a href="./concat.html">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="menu_right">
+            <a href="./login.html" class="btn-contact sm-hidden">login </a>
+            <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                
+            </button>
+        </div>
+    </nav>
+      <main class="concats">
+       
+         <section-concats>
+    
+    <div class="section-concats-header">
+      <div class="container-concats">
+        <h2>Contact Us</h2>
+        <p>
+           
+          The robot in the era of golden technology, a steady development that takes the minds
+
+          When we think of robots
+        </p>
+      </div>
+    </div>
+    
+    <div class="container-concats">
+      <div class="row">
+        
+        <div class="contact-info">
+          <div class="concats-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            
+            <div class="concats-info">
+              <h4>Address</h4>
+              <p>4671 Sugar Camp Road,<br/> Owatonna, Minnesota, <br/>55060</p>
+            </div>
+          </div>
+          
+          <div class="concats-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="concats-info">
+              <h4>Phone</h4>
+              <p>+966864564533</p>
+            </div>
+          </div>
+          
+          <div class="concats-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="concats-info">
+              <h4>Email</h4>
+             <p>RR@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form action="" id="contact-form">
+           
+            <div class="input-box">
+              <input type="text" required="true" name="" placeholder="enter name">
+             
+            </div>
+            
+            <div class="input-box">
+              <input type="email" required="true" name="" placeholder="enter email">
+              
+            </div>
+            
+            <div class="input-box">
+              <textarea required="true" name="" placeholder="enter message"></textarea>
+             
+            </div>
+            
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section-concats>
+       
+      </main>
+      <footer>
+        <div class="footer">
+          <i class="fab fa-facebook-f"
+            >©Copyright. Designed And Developed By Raneem</i
+          >
+          <i class="fab fa-twitter">+966546535434234</i>
+          <i class="fab fa-instagram">Suadi</i>
+        </div>
+      </footer>
+      <script src="./js/script.js"></script>
+      
+   </body>
+</html>

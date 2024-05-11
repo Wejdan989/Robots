@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="menu_left">
+            <div class="logo">
+                <h2>Robots</h2>
+            </div>
+            <div class="menu-li">
+                <ul class="menu">
+                    <li class="menu_list">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="./information.html">Robots</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="./About.html">About</a>
+                    </li>
+                    <li class="menu_list ">
+                        <a href="./concat.html">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="menu_right">
+            <a href="./login.html" class="btn-contact sm-hidden">login </a>
+            <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+                
+            </button>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="row">
+            <div class="col text-content">
+                <h1>welcome to Worled Of Robots</h1>
+                <p>The robot in the era of golden technology, a steady development that takes the minds
+
+                  When we think of robots, we may imagine human-like robotic machines inspired by science fiction.
+                   While these types of machines are still mostly fictional,
+                   there are many other types of robots operating in the world today.
+                  
+                  </p>
+                <button ><a href="./aboutproject.html">Information</a></button>
+                
+            </div>
+           
+        </div>
+    </header>
+    <h2 style="padding: 20px;">Robots</h2>
+    <div class="products-container">
+      
+      <div class="product">
+        <img src="./images/1.jpg" alt="Intelligence Robots " />
+        <div class="details">
+          <h3>Intelligence Robots</h3>
+        
+        </div>
+      </div>
+      <div class="product">
+        <img src="./images/4.jpg" alt="Industrial Robots" />
+        <div class="details">
+          <h3>Industrial Robots</h3>
+        </div>
+      </div>
+      <div class="product">
+        <img src="./images/2.jpg" alt="Sports Robots" />
+        <div class="details">
+          <h3>Sports Robots</h3>
+       
+        </div>
+      </div>
+      <div class="product">
+        <img src="./images/6.jpg" alt="Action Robots" />
+          <div class="details">
+            <h3>Action Robots</h3>
+          </div>
+        </div>
+      </div>  
+ 
+      <section>
+   
+        <section>
+            <div class="container-title">
+                <div class="section-title">
+                  <div class="section-item-title" >
+                    <img src="./images/2 (6).jpg" alt="صورة">
+                    <h3 style="padding: 10px;">
+                 
+
+The first robot in history designed by a Muslim and in the Middle Ages..
+ about Al-Jazari, nicknamed "Leonardo da Vinci of the East"
+                    </h3>
+                  </div>
+                  
+                  
+                </div>
+                
+              </div>
+              <div class="container">
+                <div class="section">
+                  <div class="section-item" style="padding-top: 20px;margin-right:20px">
+                    <img src="./images/2 (1).jpg" alt="صورة">
+                    <h3>
+                        Medical robots: They help in performing surgical and therapeutic tasks with greater accuracy and safety.
+ They are used in hospitals to assist doctors and surgeons in surgeries such as hip replacement,
+ which reduces the risk of complications and improves surgical results.
+
+                    </h3>
+                  </div>
+                  
+                  <div class="section-item" style="padding-bottom: 20px;">
+                    <h3 style="
+                    padding: 10px;
+                ">
+                Industrial robots: They help produce more products with fewer workers.
+                 They are used in car factories to perform routine tasks such as welding and assembling car parts,
+                allowing companies to produce more cars at a lower cost.
+                    </h3>
+                    <img src="./images/2 (3).jpg" alt="صورة">
+                  </div>
+                </div>
+                <div class="section">
+                  <div class="section-item" style="padding-bottom: 20px;">
+                    <img src="./images/34.jpg" alt="صورة">
+                    <h3>
+                        Military robots: They help in performing combat missions and protecting soldiers from danger, 
+as they are used to fire, transport ammunition, and search for mines. For example,
+ there is a “Centaur” robot to detect and dispose of explosives,
+ a “Mott” robot that tracks soldiers and carries their equipment, and a “Centaur” robot. 
+ Sapphire, which combats fires that break out on naval ships.
+                    </h3>
+                  </div>
+                  
+                  <div class="section-item" style="padding-top: 20px;">
+                    <h3 style="
+                    padding: 10px;
+                ">
+                    
+ Social robots: They help humans perform daily tasks, as they are used in homes to clean,
+ prepare meals, and care for the elderly, 
+saving people time and effort and improving the quality of life.
+
+                    </h3>
+                    <img src="./images/2 (2).jpg" alt="صورة">
+                  </div>
+                </div>
+              </div>
+        </section>
+      </section>
+    
+      <div>
+        <div
+          id="container "
+          style="
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+          "
+        >
+          <h3>Video</h3>
+          <div id="video">
+            <video style="width: 600px" src="./video/video.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+  
+      <footer>
+        <div class="footer">
+          <i class="fab fa-facebook-f"
+            >©Copyright. Designed And Developed By Raneem</i
+          >
+          <i class="fab fa-twitter">+966546535434234</i>
+          <i class="fab fa-instagram">Suadi</i>
+        </div>
+      </footer>
+    <script>
+        function toggleMenu() {
+            const menu_box = document.querySelector(".menu-li");
+            const navbar = document.querySelector(".navbar");
+            navbar.classList.toggle('active');
+            menu_box.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

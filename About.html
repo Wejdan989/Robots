@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <style>
+      body{
+        background-image: url('./images/2\ \(6\).jpg');
+        width: 100%;
+      }
+      .member-list-container {
+        
+        margin: 90px;
+        text-align: center;
+        margin: 80px auto;
+        max-width: 600px;
+        padding: 50px;
+        border: 1px solid #6c6af7;
+        border-radius: 10px;
+        box-shadow: 0 2px 11px rgba(0, 0, 0, 0.1);
+      }
+
+      .member-list-container h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      #member-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      #member-list li {
+        background-color: #5d78f5;
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      h2{
+        color: white;
+      }
+    </style>
+    <title>Developer</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu_left">
+          <div class="logo">
+              <h2>Robots</h2>
+          </div>
+          <div class="menu-li">
+              <ul class="menu">
+                  <li class="menu_list">
+                      <a href="./index.html">Home</a>
+                  </li>
+                  <li class="menu_list">
+                      <a href="./information.html">Robots</a>
+                  </li>
+                  <li class="menu_list">
+                      <a href="./About.html">About</a>
+                  </li>
+                  <li class="menu_list ">
+                      <a href="./concat.html">Contact Us</a>
+                  </li>
+                  
+              </ul>
+          </div>
+
+      </div>
+      <div class="menu_right">
+          <a href="./login.html" class="btn-contact sm-hidden">login </a>
+          <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+              
+          </button>
+      </div>
+  </nav>
+    <section class="member-list-container">
+      <h2>Developers</h2>
+      <ul id="member-list"></ul>
+    </section>
+    <section>
+      <div
+        class=""
+        style="
+          flex-direction: column;
+          align-items: center;
+          display: flex;
+          padding-bottom: 10px;
+          align-content: space-between;
+          justify-content: space-between;
+        "
+      >
+        <h2>phone:+966864564533</h2>
+        <h2>facebook:R@facebook.com</h2>
+        <h2>twitter:R@twitter.com</h2>
+      </div>
+      <div
+      class=""
+      style="
+        flex-direction: row;
+        align-items: center;
+        display: flex;
+        padding-bottom: 20px;
+        align-content: space-between;
+        justify-content: space-between;
+      "
+    >
+      <h2>Project Name:Robots</h2>
+      <h2>Developer By:Raneem</h2>
+      <h2>Developed in history:2024</h2>
+    </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <i class="fab fa-facebook-f"
+          >©Copyright. Designed And Developed By Raneem</i
+        >
+        <i class="fab fa-twitter">+966546535434234</i>
+        <i class="fab fa-instagram">Suadi</i>
+      </div>
+    </footer>
+    <script>
+      const members = [
+        "Raneem Abdullah Al-Sahli",
+        "Wejdan Hassan Judayba",
+        "Amani saleem Al-Balawi",
+      ];
+
+      const memberList = document.getElementById("member-list");
+
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function displayMembers() {
+        const shuffledMembers = shuffleArray(members);
+        memberList.innerHTML = "";
+
+        shuffledMembers.forEach((member) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = member;
+          memberList.appendChild(listItem);
+        });
+      }
+
+      displayMembers();
+
+      window.onload = function () {
+        displayMembers();
+      };
+    </script>
+  </body>
+</html>

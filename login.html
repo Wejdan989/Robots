@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login</title>
+    <link rel="stylesheet" href="./assets/style.css">
+   <style>
+    body{
+        background-image: url('./images/9.jpg');
+    }
+    #container-login {
+        padding-bottom: 0px;
+    padding-top: 90px;
+    margin-left: 30%;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: nowrap;
+      }
+  #form-group {
+    margin-bottom: 19px;
+    color: black;
+}
+input,
+
+.form-group input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-group input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+
+}
+.inp{
+  width: 300px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 9px;
+  font-size: 16px;
+
+}
+
+button[type="submit"] {
+  padding: 10px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: rgb(35, 132, 241);
+}
+.form-group input[type="submit"] {
+
+  width: 200px;
+  height: 20px;
+}
+
+   </style>
+    <title>Home Page</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="menu_left">
+        <div class="logo">
+            <h2>Robots</h2>
+        </div>
+        <div class="menu-li">
+            <ul class="menu">
+                <li class="menu_list">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="menu_list">
+                    <a href="./information.html">Robots</a>
+                </li>
+                <li class="menu_list">
+                    <a href="./About.html">About</a>
+                </li>
+                <li class="menu_list ">
+                    <a href="./concat.html">Contact Us</a>
+                </li>
+                
+            </ul>
+        </div>
+
+    </div>
+    <div class="menu_right">
+        <a href="#" class="btn-contact sm-hidden">login </a>
+        <button onclick="toggleMenu()" class="btn-menubar lg-hidden">
+            
+        </button>
+    </div>
+</nav>
+    <main>
+      <section>
+        
+        <div id="container-login">
+            <form action="#">
+          <h2 style="color:white" >Logon in</h2>
+
+  
+              <div id="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div id="form-group">
+                <label for="password"> Password:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              
+             
+             
+    
+                 <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+      <div class="form-group">
+        <p style="color:white" class="message">Already have an account? <a style="color:blue" href="register.html">Register</a></p>
+      </div>
+            </form>
+          </div>
+      </section>
+        
+      </main>
+  
+    
+    
+</body>
+</html>
